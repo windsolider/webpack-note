@@ -246,9 +246,11 @@ npm install eslint eslint-loader --save-dev
 想实现使用require或是import的时候,可以通过设置extensions自动尝试添加扩展名进行匹配
 
 ```javascript
-resolve: {
-    extensions: [".js", ".jsx", ".json", ".css", ".ts", ".tsx", ".vue"]
-},
+module.exports = {
+    resolve: {
+        extensions: [".js", ".jsx", ".json", ".css", ".ts", ".tsx", ".vue"]
+    }
+}
 ```
 
 
