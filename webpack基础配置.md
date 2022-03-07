@@ -243,7 +243,7 @@ npm install eslint eslint-loader --save-dev
 > 配置[eslint-loader](https://github.com/webpack-contrib/eslint-loader)可以实时校验js文件的正确性,`pre`表示在所有`loader`执行前执行
 
 ## resolve解析
-想实现使用require或是import的时候,可以自动尝试添加扩展名进行匹配
+想实现使用require或是import的时候,可以通过设置extensions自动尝试添加扩展名进行匹配
 
 ```javascript
 resolve: {
