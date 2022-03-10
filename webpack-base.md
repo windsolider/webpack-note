@@ -204,9 +204,13 @@ npm install @babel/core @babel/preset-env babel-loader --save-dev
 ```
 
 ```javascript
-module: {
-  rules: [{ test: /\.js$/, use: "babel-loader" }]
-},
+module.exports = {
+    module: {
+        rules: [
+            { test: /\.jsx?$/, use: "babel-loader" }
+        ]
+    },
+};
 ```
 
 ### vue文件处理
