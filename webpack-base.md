@@ -41,7 +41,7 @@ module.exports = {
 - 扩展插件，在webpack构建流程中的特定时机注入扩展逻辑来改变构建结果或做你想要的事情。
 - 插件分为两种，一种是webpack自身拥有的，可以通过webpack直接调用，一种是第三方，需要安装对应的npm包
 
-### 生成一个html文件，在body中使用script标签引入你所有webpack生成的bundle
+### 生成一个html文件，在body中使用script标签引入所有webpack生成的bundle
 
 ```bash
 npm i html-webpack-plugin --save-dev
