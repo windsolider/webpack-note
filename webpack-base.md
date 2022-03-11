@@ -191,18 +191,6 @@ npm install @babel/core @babel/preset-env babel-loader --save-dev
 
 `@babel/core`是babel中的核心模块，`@babel/preset-env` 的作用是es6转化es5插件的插件集合，`babel-loader`是`webpack`和`loader`的桥梁。
 
-
-
-将babel相关配置从package.json抽离出来,增加`babel`的配置文件 `.babelrc或者babel.config.js`
-
-```json
-{
-    "presets": [
-       ["@babel/preset-env"]
-    ]
-}
-```
-
 ```javascript
 module.exports = {
     module: {
@@ -212,6 +200,18 @@ module.exports = {
     },
 };
 ```
+
+也可以将babel-loader相关配置从package.json抽离出来,增加`babel`的配置文件 `.babelrc或者babel.config.js`
+
+```javascript
+module.exports = {
+    "presets": [
+       ["@babel/preset-env"]
+    ]
+};
+```
+
+
 
 ### vue文件处理
 

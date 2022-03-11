@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/windsolider/webpack-note/issues"
   },
-  "homepage": "https://github.com/windsolider/webpack-note#readme"
+  "homepage": "https://github.com/windsolider/webpack-note#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
