@@ -4,7 +4,8 @@
   "description": "a note for learn webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,17 @@
   },
   "homepage": "https://github.com/windsolider/webpack-note#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
     "css-loader": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.17.2"
   }
 }
